@@ -35,6 +35,7 @@ jobs:
           brew install gdal
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
+          packages: any::sessioninfo
           cache-version: 2
           extra-packages: |
             any::renv

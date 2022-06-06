@@ -33,13 +33,11 @@ jobs:
         run: |
           brew install pkg-config
           brew install gdal
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - uses: r-lib/actions/setup-renv@v2
         with:
-          packages: any::sessioninfo
           cache-version: 2
           extra-packages: |
             any::renv
-            any::rcmdcheck
         env:
           R_LIBS_USER: ~/Library/Application Support/renv
           GITHUB_ACTION: TRUE

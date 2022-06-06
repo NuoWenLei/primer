@@ -33,6 +33,7 @@ jobs:
         run: |
           brew install pkg-config
           brew install gdal
+          brew install libproj
       - uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 2
